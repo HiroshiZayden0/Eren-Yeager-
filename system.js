@@ -112,7 +112,7 @@ kyami.sendMessage(m.chat, { text: teks, contextInfo: {
             groupMentions: [],
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363366790950043@newsletter',
+                newsletterJid: '120363414620108468@newsletter',
                newsletterName: "Kyami Silence",
                 serverMessageId: -1
             },
@@ -121,7 +121,7 @@ externalAdReply: {
         showAdAttribution: true,
         title: `𝘍𝘶𝘳𝘪𝘯𝘢 𝘟 𝘏𝘶𝘛𝘢𝘰 𝘔𝘶𝘭𝘵𝘪 𝘋𝘦𝘷𝘪𝘤𝘦`,
         body: `mau script ini? pencet gambar ini bre`,
-        thumbnailUrl: `https://files.catbox.moe/51dx8h.jpg`,
+        thumbnailUrl: `https://files.catbox.moe/a5l295.gif`,
         sourceUrl: "https://youtube.com/@hiroshihosting",
         mediaType: 1,
         renderLargerThumbnail: true
@@ -133,7 +133,7 @@ kyami.sendMessage(m.chat, { text: teks, contextInfo: {
             groupMentions: [],
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363366790950043@newsletter',
+                newsletterJid: '120363414620108468@newsletter',
                newsletterName: "Kyami Silence",
                 serverMessageId: -1
             },
@@ -141,9 +141,9 @@ kyami.sendMessage(m.chat, { text: teks, contextInfo: {
 externalAdReply: {
         showAdAttribution: true,
         title: `𝘍𝘶𝘳𝘪𝘯𝘢 𝘟 𝘏𝘶𝘛𝘢𝘰 𝘔𝘶𝘭𝘵𝘪 𝘋𝘦𝘷𝘪𝘤𝘦`,
-        body: `Mau Script? Klik Gambar Ini :3`,
-        thumbnailUrl: `https://files.catbox.moe/51dx8h.jpg`,
-        sourceUrl: "https://youtube.com/@slnckyami",
+        body: `mau script ini? pencet gambar ini bre`,
+        thumbnailUrl: `https://files.catbox.moe/a5l295.gif`,
+        sourceUrl: "https://youtube.com/@hiroshihosting",
         mediaType: 1,
         renderLargerThumbnail: true
           }
@@ -300,12 +300,12 @@ kyami.sendMessage(m.chat, {
   buttons: [
     {
       buttonId: `.owner`,
-      buttonText: { displayText: '𝘊𝘰𝘯𝘵𝘢𝘤𝘵 𝘖𝘸𝘯𝘦𝘳' },
+      buttonText: { displayText: 'contact owner ganteng' },
       type: 1
     },
     {
     buttonId: `.tqto`,
-      buttonText: { displayText: '𝘛𝘩𝘢𝘯𝘬𝘴 𝘛𝘰' },
+      buttonText: { displayText: 'thanks to' },
       type: 1
     },
     {
@@ -318,12 +318,12 @@ kyami.sendMessage(m.chat, {
           title: 'Select This Menu',
           sections: [
             {
-              title: 'Select This Menu',
-              highlight_label: 'Recommended',
+              title: 'select this menu',
+              highlight_label: 'recommended',
               rows: [
                 {
-                  title: 'ALL MENU',
-                  id: '.menu-furina'
+                  title: 'all menu',
+                  id: '.menu-eren jaeger'
                 }
               ]
             }
@@ -365,10 +365,10 @@ break
     case "menu-furina": {
     let mbut = `
 ┏━━━❖ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 ❖━━━
-┃  𝙃𝙄 : ${pushname}  
-┃  𝘽𝙊𝙏 : ${global.namaBot}  
-┃  𝙈𝙊𝘿𝙀 : ${kyami.public ? 'Public' : 'Self'}  
-┃  𝙐𝙎𝙀𝙍 : @${m.sender.split('@')[0]}  
+┃  user : ${pushname}  
+┃  bot : ${global.namaBot}  
+┃  mode : ${hiroshi.public ? 'Public' : 'Self'}  
+┃  user : @${m.sender.split('@')[0]}  
 ┗━━━━━━━⭑
 ┏━━━❖ 𝙊𝙒𝙉𝙀𝙍 𝙈𝙀𝙉𝙐 ❖━━━
 ┃⁠➫ ${prefix}mode  
@@ -656,7 +656,7 @@ kyami.sendMessage(m.chat, { react: { text: "💔",key: m.key,}})
           break
 case 'listpanel': {
     let lspnl = `
-*List Panel Run Bot Public By Kyami Silence*
+*List Panel Run Bot Public By Hiroshi Hosting*
 
 * Ram 1GB : Rp1000/1K
 
@@ -681,7 +681,7 @@ case 'listpanel': {
 *Syarat & Ketentuan :*
 * _Server private & kualitas terbaik!_
 * _Script bot dijamin aman (anti drama/maling)_
-* _Garansi 10 hari (1x replace)_
+* _Garansi 25 hari (1x replace)_
 * _Server anti delay/lemot!_
 * _Claim garansi wajib bawa bukti transaksi_
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :
@@ -729,12 +729,12 @@ case 'listpanelpriv': {
 
 * Ram 9 GB : Rp9000/9K
 
-* Ram Unlimited : Rp10.000/10K
+* Ram Unlimited : Rp12.000/12K
 
 *Syarat & Ketentuan :*
 * _Server private & kualitas terbaik!_
 * _Script bot dijamin aman (anti drama/maling)_
-* _Garansi 10 hari (1x replace)_
+* _Garansi 25 hari (1x replace)_
 * _Server anti delay/lemot!_
 * _Claim garansi wajib bawa bukti transaksi_
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :
