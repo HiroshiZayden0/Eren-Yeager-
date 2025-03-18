@@ -35,7 +35,7 @@ const {
 
 const { makeWASocket, makeCacheableSignalKeyStore, downloadContentFromMessage, emitGroupParticipantsUpdate, emitGroupUpdate, generateWAMessageContent, generateWAMessage, makeInMemoryStore, prepareWAMessageMedia, generateWAMessageFromContent, MediaType, areJidsSameUser, WAMessageStatus, downloadAndSaveMediaMessage, AuthenticationState, GroupMetadata, initInMemoryKeyStore, getContentType, MiscMessageGenerationOptions, useSingleFileAuthState, BufferJSON, WAMessageProto, MessageOptions, WAFlag, WANode, WAMetric, ChatModification, MessageTypeProto, WALocationMessage, ReconnectMode, WAContextInfo, proto, WAGroupMetadata, ProxyAgent, waChatKey, MimetypeMap, MediaPathMap, WAContactMessage, WAContactsArrayMessage, WAGroupInviteMessage, WATextMessage, WAMessageContent, WAMessage, BaileysError, WA_MESSAGE_STATUS_TYPE, MediaConnInfo, URL_REGEX, WAUrlInfo, WA_DEFAULT_EPHEMERAL, WAMediaUpload, mentionedJid, processTime, Browser, MessageType, Presence, WA_MESSAGE_STUB_TYPES, Mimetype, relayWAMessage, Browsers, GroupSettingChange, DisconnectReason, WASocket, getStream, WAProto, isBaileys, PHONENUMBER_MCC, AnyMessageContent, useMultiFileAuthState, fetchLatestBaileysVersion, templateMessage, InteractiveMessage, Header } = require('@whiskeysockets/baileys')
 
-module.exports = kyami = async (kyami, m, chatUpdate, store) => {
+module.exports = hiroshi = async (hiroshi, m, chatUpdate, store) => {
     try {
         const body = (
             m.mtype === "conversation" ? m.message.conversation :
@@ -48,7 +48,7 @@ module.exports = kyami = async (kyami, m, chatUpdate, store) => {
             m.mtype === "interactiveResponseMessage" ? JSON.parse(m.msg.nativeFlowResponseMessage.paramsJson).id :
             m.mtype === "templateButtonReplyMessage" ? m.msg.selectedId :
             m.mtype === "messageContextInfo" ? m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text : "");
-        const sender = m.key.fromMe ? kyami.user.id.split(":")[0] + "@s.whatsapp.net" || kyami.user.id
+        const sender = m.key.fromMe ? hiroshi.user.id.split(":")[0] + "@s.whatsapp.net" || hiroshi.user.id
 : m.key.participant || m.key.remoteJid;
 
         const senderNumber = sender.split('@')[0];
@@ -64,7 +64,7 @@ module.exports = kyami = async (kyami, m, chatUpdate, store) => {
         const owners = JSON.parse(fs.readFileSync('./start/lib/database/owner.json'))
         const antilink = JSON.parse(fs.readFileSync('./command/antilink.json'))
 const antilink2 = JSON.parse(fs.readFileSync('./command/antilink2.json'))
-        const botNumber = await kyami.decodeJid(kyami.user.id);
+        const botNumber = await hiroshi.decodeJid(hiroshi.user.id);
         const KyamiPenCewe = [botNumber, ...kontributor, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPremium = premium.includes(m.sender)
         const isCmd = body.startsWith(prefix);
@@ -120,9 +120,9 @@ kyami.sendMessage(m.chat, { text: teks, contextInfo: {
 externalAdReply: {
         showAdAttribution: true,
         title: `𝘍𝘶𝘳𝘪𝘯𝘢 𝘟 𝘏𝘶𝘛𝘢𝘰 𝘔𝘶𝘭𝘵𝘪 𝘋𝘦𝘷𝘪𝘤𝘦`,
-        body: `Mau Script? Klik Gambar Ini :3`,
+        body: `mau script ini? pencet gambar ini bre`,
         thumbnailUrl: `https://files.catbox.moe/51dx8h.jpg`,
-        sourceUrl: "https://youtube.com/@slnckyami",
+        sourceUrl: "https://youtube.com/@hiroshihosting",
         mediaType: 1,
         renderLargerThumbnail: true
           }
